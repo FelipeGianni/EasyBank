@@ -1,9 +1,10 @@
 .hero {
-   margin-bottom: 5rem;
+   padding-bottom: 5rem;
    background-color: $veryLightGray;
 
    @include breakpoint-up(large) {
       align-items: center;
+      padding-bottom: 0;
       display: flex;
    }
 
@@ -41,11 +42,11 @@
          }
 
          @include breakpoint-up(large) {
-            height: 118%;
+            height: 124%;
             width: 100%;
-            background-size: 100%;
+            background-size: 104%;
             background-position: center bottom;
-            left: 7.8125rem;
+            left: 7rem;
          }
       }
    }

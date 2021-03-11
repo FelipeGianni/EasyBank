@@ -1,14 +1,69 @@
 .benefits {
+   text-align: center;
+   background-color: $lightGrayishBlue;
+
+   @include breakpoint-up("large") {
+      text-align: left;
+   }
 
    &__title {
 
+      h2 {
+         padding-top: 4rem;
+         padding-bottom: 1.25rem;
+
+         @include breakpoint-up("large") {
+            padding-top: 6.875rem;
+            padding-bottom: 1.875rem;
+         }
+      }
+
+      p {
+         padding-bottom: 3.4375rem;
+
+         @include breakpoint-up("large") {
+            padding-right: 22rem;
+            padding-bottom: 4.68rem;
+         }
+      }
    }
 
    &__options {
-      display: flex;
+      display: block;
+      padding-bottom: 1.875rem;
+
+      @include breakpoint-up("large") {
+         display: flex;
+      }
       
       .opt {
-         justify-content: flex-start;
+
+         @include breakpoint-up("large") {
+            flex: 1;
+            padding-right: 1.2rem;
+
+            &:last-child {
+               padding-right: 0;
+            }
+         }
+
+         img {
+            padding-bottom: 1.5625rem;
+
+            @include breakpoint-up("large") {
+               padding-bottom: 2.5rem;
+            }
+         }
+
+         h3 {
+            padding-bottom: 1.25rem;
+         }
+
+         p {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            padding-bottom: 1.875rem;
+         }
       }
    }
 }
