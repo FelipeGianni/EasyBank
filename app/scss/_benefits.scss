@@ -1,0 +1,14 @@
+.benefits {
+
+   &__title {
+
+   }
+
+   &__options {
+      display: flex;
+      
+      .opt {
+         justify-content: flex-start;
+      }
+   }
+}
