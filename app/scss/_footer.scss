@@ -1,0 +1,116 @@
+.footer {
+   display: inline-block;
+   background-color: $darkBlue;
+   height: 29.375rem;
+   width: 100%;
+   padding-top: 2.1875rem;
+   padding-bottom: 2.1875rem;
+   text-align: center;
+
+   @include breakpoint-up("large") {
+      display: flex;
+      height: 11.875rem;
+      padding-top: 2.8125rem;
+      padding-bottom: 2.8125rem;
+      text-align: left;
+   }
+
+   &__first {
+
+
+      @include breakpoint-up("large") {
+         width: 18rem;
+      }
+
+      .logo {
+         display: inline-block;
+         height: 1.25rem;
+         margin-bottom: 1.5625rem;
+         
+         @include breakpoint-up("large") {
+            margin-bottom: 3.125rem;
+         }
+      }
+      
+      .icon {
+         height: 1.375rem;
+         margin-bottom: 1.875rem;
+         
+         @include breakpoint-up("large") {
+            height: 1.25rem;
+            margin-bottom: 0;
+         }
+
+         a {
+            
+            &:not(:last-child) {
+               margin-right: 0.9375rem;
+
+               @include breakpoint-up("large") {
+                  margin-right: 0.75rem;
+               }
+            }
+         }
+      }
+   }
+
+   &__link1 {
+
+      @include breakpoint-up("large") {
+         width: 12rem;
+      }
+      
+      a {
+         display: block;
+         color: $lightGrayishBlue;
+         margin-bottom: 0.75rem;
+
+         @include breakpoint-up("large") {
+            font-size: 0.875rem;
+         }
+      }
+   }
+
+   &__link2 {
+      margin-bottom: 1.875rem;
+
+      @include breakpoint-up("large") {
+         margin-bottom: 0;
+         width: 15rem;
+      }
+      
+      a {
+         display: block;
+         color: $lightGrayishBlue;
+
+         @include breakpoint-up("large") {
+            font-size: 0.875rem;
+         }
+
+         &:not(:last-child) {
+            margin-bottom: 0.75rem;
+         }
+      }
+   }
+
+   &__final {
+      
+
+      @include breakpoint-up("large") {
+         width: 19rem;
+         text-align: right;
+         float: right;
+      }
+
+      .button {
+         margin-bottom: 1.5rem;
+      }
+
+      .copyright {
+
+         @include breakpoint-up("large") {
+            font-size: 0.9375rem;
+         }
+      }
+   }
+}

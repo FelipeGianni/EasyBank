@@ -32,11 +32,20 @@
       display: block;
       padding-bottom: 1.875rem;
 
+      @include breakpoint-up("medium") {
+         display: flex;
+         flex-wrap: wrap;
+      }
+
       @include breakpoint-up("large") {
          display: flex;
       }
       
       .opt {
+
+         @include breakpoint-up("medium") {
+            flex: 0 0 50%;
+         }
 
          @include breakpoint-up("large") {
             flex: 1;

@@ -1,0 +1,99 @@
+.article {
+   padding-top: 5.3125rem;
+   padding-bottom: 5rem;
+   background-color: $veryLightGray;
+
+   @include breakpoint-up("large") {
+      padding-top: 5.9375rem;
+   }
+
+   &__title {
+      padding-bottom: 1.5625rem;
+
+      @include breakpoint-up("large") {
+         padding-bottom: 2.8125rem;
+      }
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.875rem;
+
+      @include breakpoint-up("medium") {
+         grid-template-columns: repeat(2,1fr);
+      }
+
+      @include breakpoint-up("large") {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+
+   &__item {
+      border-radius: 5px;
+      background-color: $white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+         transform: scale(1.05);
+      }
+   }
+
+   &__image {
+      height: 12.5rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 5px 5px 0px 0px;
+
+      @include breakpoint-up("large") {
+         height: 12.5rem;
+      }
+   }
+
+   &__text {
+      padding-top: 1.5625rem;
+      padding-right: 1.5625rem;
+      padding-bottom: 1.5625rem;
+      padding-left: 1.5625rem;
+
+      &__author {
+         p {
+            font-size: 0.625rem;
+            font-weight: 300;
+            color: $grayishBlue;
+            padding-bottom: 0.6875rem;
+
+            @include breakpoint-up("large") {
+               padding-bottom: 0.875rem;
+            }
+         }
+      }
+
+      &__title {
+         p {
+            color: $darkBlue;
+            font-size: 0.9375rem;
+            font-weight: 400;
+            padding-bottom: 0.6875rem;
+
+            @include breakpoint-up("large") {
+               padding-bottom: 0.875rem;
+            }
+         }
+      }
+
+      &__description {
+         p {
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: $grayishBlue;
+
+            @include breakpoint-up("large") {
+               font-size: 0.68rem;
+            }
+         }
+      }
+   }
+}
